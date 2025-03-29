@@ -13,7 +13,7 @@ export default function SpeakerSessionRSVP() {
   const onSubmit = (data) => {
     console.log("Form Data:", data);
 
-    axios.post("http://localhost:5000/api/rsvp/register", data)
+    axios.post("https://tnp-task2-backend.onrender.com/api/rsvp/register", data)
       .then(response => {
         setRegistrationSuccess(true);
         setTimeout(() => setRegistrationSuccess(false), 5000);
